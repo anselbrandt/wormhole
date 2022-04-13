@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="description" content="Send files from one place to another." />
+<meta name="go-import" content="webwormhole.io git https://github.com/saljam/webwormhole" />
+<meta name="viewport" content="width=device-width, height=device-height" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="icon192.png" />
+<link rel="apple-touch-icon" href="icon192.png">
+<link rel="manifest" href="/pwa.json">
+<link rel="stylesheet" href="style.css" />
+<script src="wasm_exec.js"></script>
+<script src="ww.js"></script>
+<script src="main.js"></script>
+<title>WebWormhole</title>
+<body>
+<form id="main" role="main">
+<p id="info">WebWormhole lets you send files from one computer to another.</p>
+<div id="top">
+Drag and drop, <label id="filepicker-wrap" class="button">OPEN<input type="file" id="filepicker" disabled /></label>, or <input type="button" id="clipboard" class="button" value="PASTE" disabled /> files and text to send.
+</div>
+<ul id="transfers"></ul>
+<div id="prompt">
+<p>Type a wormhole's phrase to join it, or leave empty to create a new one.</p>
+<img id="qr" />
+<input type="text" id="magiccode" autocomplete="off" autofocus title="wormhole phrase" placeholder="wormhole phrase" />
+<input type="submit" id="dial" class="button" value="LOADING..." disabled />
+<span id="autocomplete"></span>
+</div>
+<div id="footer">
+<ul>
+<li>source: <a href="https://github.com/saljam/webwormhole">github.com/saljam/webwormhole</a></li>
+<li>feedback: <a href="mailto:s@lj.am">s@lj.am</a> <a href="https://twitter.com/_saljam">@_saljam</a></li>
+<li>install: <a href="https://addons.mozilla.org/firefox/addon/webwormhole/">firefox</a> <a href="https://chrome.google.com/webstore/detail/webwormhole/jhombkhjanncdalcbcahinpjoacaiidn">chrome</a> <a href="https://pkg.go.dev/webwormhole.io/cmd/ww">command line</a></li>
+</ul>
+</div>
+</form>
+</body>
+</html>

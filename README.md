@@ -1,5 +1,12 @@
 # Forked from [saljam/webwormhole](https://github.com/saljam/webwormhole)
 
+### ✨Docker✨
+
+```
+docker build -t wormhole .
+docker run -d -p=8000:8000 wormhole
+```
+
 THIS PROJECT IS STILL IN EARLY DEVELOPMENT IT USES EXPERIMENTAL
 CRYPTOGRAPHIC LIBRARIES AND IT HAS NOT HAD ANY KIND OF SECURITY
 OR CRYPTOGRAPHY REVIEW THIS SOFTWARE MIGHT BE BROKEN AND UNSAFE
